@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Vijay P | Python Backend Developer</title><style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f4ff;--card:#fff;--text:#1b1740;--muted:#5b5780;--line:#e4def8;--g:linear-gradient(120deg,#7c3aed,#db2777,#f97316);--a:#7c3aed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0b1e;--card:#171433;--text:#f1eeff;--muted:#a9a3d1;--line:#2a2552;--a:#a78bfa}}
+:root[data-theme="dark"]{--bg:#0d0b1e;--card:#171433;--text:#f1eeff;--muted:#a9a3d1;--line:#2a2552;--a:#a78bfa}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px;font-weight:500}nav a:hover{color:var(--a)}
+.logo{font-weight:800;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:1.2rem}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:36px 0 28px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.tag{display:inline-block;background:var(--g);color:#fff;padding:5px 14px;border-radius:99px;font-size:13px;font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.1rem);line-height:1.12;margin:16px 0 12px}
+.gt{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:1.06rem}
+.btns{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--a);color:var(--a)}
+.btn.p{background:var(--g);color:#fff;border-color:transparent}
+.term{background:#0b0a1a;border-radius:14px;box-shadow:0 20px 50px -20px #7c3aed;overflow:hidden;font:13.5px/1.7 ui-monospace,Menlo,Consolas,monospace;color:#d6d0ff}
+.term .bar{background:#1d1a3d;padding:8px 12px;display:flex;gap:6px}.bar i{width:11px;height:11px;border-radius:50%}
+.term pre{margin:0;padding:14px 16px;white-space:pre-wrap}.k{color:#f472b6}.s{color:#fbbf24}.c{color:#34d399}
+section{padding:34px 0}
+h2{font-size:1.6rem;margin:0 0 20px}h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--g);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{margin:0 0 8px;font-size:1.08rem}.card p{margin:6px 0;color:var(--muted);font-size:15px}
+.stats .card{border-top:4px solid #7c3aed}.stats .card:nth-child(2){border-color:#db2777}.stats .card:nth-child(3){border-color:#f97316}.stats .card:nth-child(4){border-color:#10b981}
+.stats b{font-size:1.9rem}.stats p{margin:0;font-size:13.5px}
+.pj{border-top:5px solid #7c3aed}.pj:nth-child(2){border-color:#db2777}.pj:nth-child(3){border-color:#f97316}.pj:nth-child(4){border-color:#10b981}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.chip{background:color-mix(in srgb,var(--a) 15%,transparent);color:var(--a);font-size:12.5px;padding:3px 10px;border-radius:99px;font-weight:700}
+.card a{color:var(--a);font-weight:600;font-size:14px}
+.icons{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:12px}
+.ico{text-align:center;font-size:12px;color:var(--muted)}
+.ico i{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;margin:0 auto 4px;font:800 16px ui-monospace,Menlo,monospace;font-style:normal;box-shadow:0 6px 14px -6px rgba(0,0,0,.4);transition:transform .2s}
+.ico:hover i{transform:translateY(-4px) rotate(-4deg)}
+.foss{background:var(--g);color:#fff;border-radius:18px;padding:24px}.foss h3{margin:0 0 6px}.foss p{margin:4px 0;opacity:.95}
+.tl{border-left:3px solid var(--line);padding-left:22px}.tl>div{margin-bottom:24px;position:relative}
+.tl>div::before{content:"";position:absolute;left:-30px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--g)}
+.tl small{color:var(--muted);display:block}.tl ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:15px}.tl li{margin-bottom:4px}
+footer{padding:28px 0 44px;color:var(--muted);font-size:14px;text-align:center}
+
+.tbtn{margin-left:16px;background:var(--card);color:var(--a);border:1px solid var(--line);border-radius:10px;width:36px;height:36px;font-size:18px;cursor:pointer}
+.fbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.fb{border:2px solid var(--a);background:transparent;color:var(--a);padding:6px 14px;border-radius:99px;font:700 13px system-ui;cursor:pointer;transition:all .2s}
+.fb.on,.fb:hover{background:var(--g);color:#fff;border-color:transparent}
+.pj{cursor:pointer;transition:transform .2s,box-shadow .2s;animation:pop .35s ease}
+.pj:hover{transform:translateY(-5px);box-shadow:0 16px 30px -16px var(--a)}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.pj ul{margin:8px 0;padding-left:18px;color:var(--muted);font-size:14.5px}
+.more{font-size:12.5px;color:var(--a);font-weight:700}
+.ico{cursor:pointer;border:0;background:none;padding:4px;border-radius:12px;font-family:inherit}
+.ico.on{outline:2px solid var(--a)}
+.det{margin-top:16px;padding:16px 18px;border-radius:14px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--a);animation:pop .3s ease}
+.det b{font-size:1.05rem}.det p{margin:4px 0 0;color:var(--muted)}
+</style></head><body><div class="wrap">
+<nav><span class="logo">Vijay P</span><div><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#exp">Experience</a><a href="#contact">Contact</a><button id="theme" class="tbtn" aria-label="Toggle light or dark theme">◐</button></div></nav>
+<header class="hero"><div><span class="tag">🐧 FOSS enthusiast · Open to work</span>
+<h1>Python backend developer who ships <span class="gt">fast, stable APIs</span>.</h1>
+<p class="lead">I build REST APIs, automation workflows and dashboards with Django, Flask and React.js, and I care about free and open source software.</p>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="https://github.com/vijayAlgos">GitHub</a><a class="btn" href="mailto:vijaypoovarayar02@gmail.com">Email me</a></div></div>
+<div class="term"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><pre><span class="c">vijay@chennai</span>:~$ whoami
+<span class="s">backend developer</span>
+<span class="c">vijay@chennai</span>:~$ cat stack.txt
+<span class="k">python django flask drf</span>
+<span class="k">react postgres linux shell</span>
+<span class="c">vijay@chennai</span>:~$ git commit -m <span class="s">"ship it"</span></pre></div></header>
+<div class="grid stats"><div class="card"><b class="gt">40%</b><p>faster real-time multi-camera processing</p></div><div class="card"><b class="gt">35%</b><p>lower backend response time</p></div><div class="card"><b class="gt">30%</b><p>better API stability via load tests</p></div><div class="card"><b class="gt">25%</b><p>faster query execution</p></div></div>
+<section id="projects"><h2>Projects</h2><div id="projects-root"><div class="grid">
+<div class="card pj"><h3>YOLO Multi-Camera Face Detection</h3><p>Low-latency face detection across simultaneous camera feeds using YOLO and multi-threading, integrated into a Flask backend.</p><div class="chips"><span class="chip">Python</span><span class="chip">YOLO</span><span class="chip">Flask</span></div></div>
+<div class="card pj"><h3>SmartBuy Spectrum</h3><p>Product comparison platform with scraped listings and side-by-side comparison, improving shopping efficiency by 20%.</p><div class="chips"><span class="chip">Django</span><span class="chip">Scrapy</span><span class="chip">SQLite</span></div><a href="https://github.com/vijayAlgos">Code on GitHub →</a></div>
+<div class="card pj"><h3>Inventory Management System</h3><p>Full stack CRUD app with robust form validation and a clean UI that protects data integrity.</p><div class="chips"><span class="chip">Django</span><span class="chip">PostgreSQL</span></div><a href="https://github.com/vijayAlgos">Code on GitHub →</a></div>
+<div class="card pj"><h3>Task Manager API <span class="chip">In progress</span></h3><p>REST API built with Django REST Framework as part of my ongoing DRF deep dive.</p><div class="chips"><span class="chip">Django</span><span class="chip">DRF</span></div><a href="https://github.com/vijayAlgos">Code on GitHub →</a></div>
+</div></div></section>
+<section id="skills"><h2>Skills</h2><div id="skills-root"><div class="grid"><div class="card"><h3>Languages</h3><div class="icons"><div class="ico"><i style="background:#3776AB;color:#fff">Py</i><span>Python</span></div><div class="ico"><i style="background:#F7DF1E;color:#222">JS</i><span>JavaScript</span></div><div class="ico"><i style="background:#E48E00;color:#fff">SQL</i><span>SQL</span></div></div></div><div class="card"><h3>Frameworks</h3><div class="icons"><div class="ico"><i style="background:#0C4B33;color:#fff">Dj</i><span>Django</span></div><div class="ico"><i style="background:#A30000;color:#fff">DRF</i><span>DRF</span></div><div class="ico"><i style="background:#4b5563;color:#fff">Fl</i><span>Flask</span></div><div class="ico"><i style="background:#61DAFB;color:#073b4c">Re</i><span>React.js</span></div><div class="ico"><i style="background:#512BD4;color:#fff">.N</i><span>​.NET Core</span></div><div class="ico"><i style="background:#7952B3;color:#fff">Bs</i><span>Bootstrap</span></div></div></div><div class="card"><h3>FOSS &amp; tools</h3><div class="icons"><div class="ico"><i style="background:#FCC624;color:#222">Ln</i><span>Linux</span></div><div class="ico"><i style="background:#4EAA25;color:#fff">$_</i><span>Shell</span></div><div class="ico"><i style="background:#F05032;color:#fff">Gt</i><span>Git</span></div><div class="ico"><i style="background:#6e5494;color:#fff">GH</i><span>GitHub</span></div><div class="ico"><i style="background:#4479A1;color:#fff">My</i><span>MySQL</span></div><div class="ico"><i style="background:#336791;color:#fff">Pg</i><span>PostgreSQL</span></div><div class="ico"><i style="background:#FF6C37;color:#fff">Pm</i><span>Postman</span></div><div class="ico"><i style="background:#D22128;color:#fff">JM</i><span>JMeter</span></div></div></div></div></div></section>
+<section><div class="foss"><h3>🐧 Open source &amp; community</h3><p>Treasurer, Cuddalore GNU/Linux Users Group (GLUG)</p><p>Executive Committee Member, Free Software Hardware Movement (FSHM)</p></div></section>
+<section id="exp"><h2>Experience</h2><div class="tl">
+<div><b>Associate Full Stack Developer · PVVN Tek Ventures LLP</b><small>Feb 2025 – Nov 2025 · Chennai</small><ul><li>Built real-time face detection with Python, YOLO and multi-threading, boosting speed 40% across multi-camera streams.</li><li>Connected Flask dashboards and REST APIs to a React.js frontend, cutting response time 35%.</li><li>Automated database structure retrieval with shell scripting.</li><li>Ran load and functional tests with Postman, JMeter and Azure for a 30% API stability gain.</li></ul></div>
+<div><b>Data Conversion Trainee · TNQ Technologies</b><small>Sep 2024 – Feb 2025 · Chennai</small><ul><li>Converted PubMed-indexed journal content into structured XML on recurring deadlines.</li></ul></div>
+<div><b>Software Developer Intern · Coopon Scitech LLP</b><small>Jan 2024 – Apr 2024 · Puducherry</small><ul><li>Built and deployed Django, React.js and PostgreSQL apps with REST integration (20% performance gain).</li><li>Fixed production issues (30% fewer errors) and optimized queries (25% faster).</li></ul></div></div></section>
+<section><h2>Education &amp; certifications</h2><div class="grid"><div class="card"><h3>MCA</h3><p>Annamalai University · 2022 – 2024</p><h3 style="margin-top:12px">BCA</h3><p>St. Joseph’s College of Arts &amp; Science · 2019 – 2022</p></div><div class="card"><h3>Certifications</h3><p>Master Full Stack Development, upGrad (2023)<br>Python Essentials, Cisco (2023)<br>Python &amp; Django, Udemy (2024)</p></div></div></section>
+<section id="contact"><h2>Let’s talk</h2><p class="lead">Looking for a Python backend or full stack role where I can ship features and keep learning.</p><div class="btns"><a class="btn p" href="mailto:vijaypoovarayar02@gmail.com">Email me</a><a class="btn" href="https://github.com/vijayAlgos">GitHub</a><a class="btn" href="https://linkedin.com/in/vijay1006">LinkedIn</a></div></section>
+<footer>© 2026 Vijay P · Chennai, India · Built with free software 🐧</footer></div><script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script><script>
+const {useState}=React,h=React.createElement;
+const PJ=[
+{t:"YOLO Multi-Camera Face Detection",d:"Low-latency face detection across simultaneous camera feeds using YOLO and multi-threading, integrated into a Flask backend.",tags:["Python","Flask"],hl:["Multi-threaded real-time pipeline","40% faster processing across camera streams","Computer vision inside a Flask service"]},
+{t:"SmartBuy Spectrum",d:"Product comparison platform with scraped listings and side-by-side comparison, improving shopping efficiency by 20%.",tags:["Python","Django"],hl:["Scrapy crawlers feed the product data","Bootstrap UI for comparisons","SQLite storage"],l:"https://github.com/vijayAlgos"},
+{t:"Inventory Management System",d:"Full stack CRUD app with robust form validation and a clean UI that protects data integrity.",tags:["Python","Django","PostgreSQL"],hl:["Validated forms for every create and update","PostgreSQL backed","Clean, simple UI"],l:"https://github.com/vijayAlgos"},
+{t:"Task Manager API",d:"REST API built with Django REST Framework as part of my ongoing DRF deep dive.",tags:["Python","Django","DRF"],hl:["In progress","Built to deepen DRF expertise"],l:"https://github.com/vijayAlgos",wip:1}];
+function Projects(){
+ const [f,setF]=useState("All"),[o,setO]=useState(null);
+ const tags=["All","Python","Django","DRF","Flask","PostgreSQL"];
+ return h("div",null,
+  h("div",{className:"fbar"},tags.map(t=>h("button",{key:t,className:"fb"+(f===t?" on":""),onClick:()=>{setF(t);setO(null)}},t))),
+  h("div",{className:"grid"},PJ.filter(p=>f==="All"||p.tags.includes(f)).map(p=>
+   h("div",{key:p.t,className:"card pj",onClick:()=>setO(o===p.t?null:p.t)},
+    h("h3",null,p.t," ",p.wip?h("span",{className:"chip"},"In progress"):null),
+    h("p",null,p.d),
+    h("div",{className:"chips"},p.tags.map(t=>h("span",{key:t,className:"chip"},t))),
+    o===p.t?h("div",null,h("ul",null,p.hl.map(x=>h("li",{key:x},x))),p.l?h("a",{href:p.l,onClick:e=>e.stopPropagation()},"Code on GitHub →"):null):h("span",{className:"more"},"Click for details ▾")))));
+}
+const SK=[["Languages",[["Py","Python","#3776AB","#fff","Used across the YOLO service, Flask APIs and Django apps."],["JS","JavaScript","#F7DF1E","#222","Powers React.js frontends."],["SQL","SQL","#E48E00","#fff","Query optimization work, 25% faster execution."]]],
+["Frameworks",[["Dj","Django","#0C4B33","#fff","Coopon Scitech apps, SmartBuy Spectrum and the Inventory system."],["DRF","DRF","#A30000","#fff","Task Manager API, my current deep dive."],["Fl","Flask","#4b5563","#fff","PVVN dashboards and REST APIs (35% lower response time)."],["Re","React.js","#61DAFB","#073b4c","Frontends at PVVN Tek and Coopon Scitech."],[".N","​.NET Core","#512BD4","#fff","Worked in the .NET stream at PVVN Tek."],["Bs","Bootstrap","#7952B3","#fff","UI for SmartBuy Spectrum."]]],
+["FOSS & tools",[["Ln","Linux","#FCC624","#222","Part of my free software community work (GLUG, FSHM)."],["$_","Shell","#4EAA25","#fff","Automated database structure retrieval, replacing manual MySQL Workbench steps."],["Gt","Git","#F05032","#fff","Version control across my projects."],["GH","GitHub","#6e5494","#fff","Where my project code lives."],["My","MySQL","#4479A1","#fff","Database work at PVVN Tek."],["Pg","PostgreSQL","#336791","#fff","Coopon Scitech apps and the Inventory system."],["Pm","Postman","#FF6C37","#fff","API functional testing."],["JM","JMeter","#D22128","#fff","Load testing, part of the 30% API stability gain."]]]];
+function Skills(){
+ const [g,setG]=useState("All"),[s,setS]=useState(null);
+ const shown=SK.filter(x=>g==="All"||x[0]===g);
+ return h("div",null,
+  h("div",{className:"fbar"},["All",...SK.map(x=>x[0])].map(t=>h("button",{key:t,className:"fb"+(g===t?" on":""),onClick:()=>{setG(t);setS(null)}},t))),
+  h("div",{className:"grid"},shown.map(([n,items])=>h("div",{key:n,className:"card"},h("h3",null,n),
+   h("div",{className:"icons"},items.map(it=>h("button",{key:it[1],className:"ico"+(s&&s[1]===it[1]?" on":""),onClick:()=>setS(it)},
+    h("i",{style:{background:it[2],color:it[3]}},it[0]),h("span",null,it[1]))))))),
+  s?h("div",{className:"det",key:s[1]},h("b",null,s[1]),h("p",null,s[4])):h("p",{className:"lead",style:{marginTop:14,fontSize:".9rem"}},"Tap a skill to see where I’ve used it."));
+}
+ReactDOM.createRoot(document.getElementById("projects-root")).render(h(Projects));
+ReactDOM.createRoot(document.getElementById("skills-root")).render(h(Skills));
+document.getElementById("theme").onclick=()=>{const r=document.documentElement;const d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+</script></body></html>
